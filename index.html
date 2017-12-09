@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			div {
+				border: 1px solid red;
+				width: 100px;
+				height: 100px;
+			}
+			
+			div:after {
+				content: "台词：-";
+				background-color: yellow;
+				color: red;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box">
+			gfdsgsd
+		</div>
+	</body>
+	<script type="text/javascript">
+		var box = document.getElementById("box");
+		var aa = window.getComputedStyle(box, ':after').color
+		console.log(aa)
+		
+		
+		function A(name,age){
+			this.name  = name;
+			this.age = age;
+		}
+		
+		var a = new A("yang",99);
+		console.log(a.age);
+		var b = new A("peng",11);
+		console.log(b.age);
+		console.log(a==b)
+		var string = new String("张三丰");
+		console.log(string.length);
+	</script>
+
+</html>
